@@ -1,15 +1,4 @@
-items = [
-    {
-        "name":"William"
+rrr = [
 
-    }
-
-
-
-
-
-
+    
 ]
-
-
-print("filler text")
