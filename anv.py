@@ -1,14 +1,31 @@
 items = [
-    {"name":"William","value":"0.01","itemtype":"human","rating":"4/10"},
+    {"name":"William without his organs","value":"0.01","itemtype":"human","rating":"4/10"},
 
     {"name":"(Overpriced) Pizza SLice","value":"7.99","itemtype":"food","rating":"7/10"},
     
     {"name":"Mr. Whalen's clock","value":"24.99","itemtype":"household","rating":"9/10"},
 
-    {"name":"Mr. Whalen's clock","value":"24.99","itemtype":"household","rating":"9/10"}
+    {"name":"iPhone 17 - 256 GB","value":"799.99","itemtype":"eletronics","rating":"8/10"},
 
+    {"name":"Staten Island Technical High School PE T-Shirt","value":"24.99","itemtype":"clothing","rating":"4/10"},
+
+    {"name":"iPhone 17 - 512 GB","value":"999.99","itemtype":"eletronics","rating":"8/10"},
+
+    {"name":"Wiliam's Shoes","value":"30.67","itemtype":"clothing","rating":"6/10"},
 
 
 ]
 
-print(items[0]["name"])
+cost = 0
+
+
+for index, item in enumerate(items):
+    print(index, ":", item["name"])
+
+
+
+
+
+
+
+print(items[0]["value"])
