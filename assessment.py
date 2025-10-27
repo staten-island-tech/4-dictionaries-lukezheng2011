@@ -43,7 +43,7 @@ def gamble(a,b,c,d):
            # total = total + 9
             
         break
-    amount = 152
+    
 
     print(f"Martha can play {amount} times before going broke")
 

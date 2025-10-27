@@ -2,7 +2,7 @@ def gamble(a,b,c,d):
 
     total = 0
 
-    while a >= 0:
+    while a > 0:
         
         b = b+1
         total = total + 1
@@ -11,6 +11,10 @@ def gamble(a,b,c,d):
         if b - 30 >= 0:
             a = a + 30
             b = b-30
+
+        if a == 0:
+            break
+
 
 
         c = c+1
@@ -21,6 +25,9 @@ def gamble(a,b,c,d):
             a = a + 60
             c = c-100
         
+        if a == 0:
+            break
+
 
 
         d = d+1
@@ -30,6 +37,9 @@ def gamble(a,b,c,d):
         if d - 10 >= 0:
             a = a + 9
             d=d-10
+
+        if a == 0:
+            break
 
 
 
