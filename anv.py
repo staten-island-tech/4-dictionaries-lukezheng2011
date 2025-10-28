@@ -1,4 +1,5 @@
 items = [
+
     {"name":"William without his organs","value":"0.01","itemtype":"human","rating":"4/10"},
 
     {"name":"(Overpriced) Pizza SLice","value":"7.99","itemtype":"food","rating":"7/10"},
@@ -11,16 +12,20 @@ items = [
 
     {"name":"iPhone 17 - 512 GB","value":"999.99","itemtype":"eletronics","rating":"8/10"},
 
-    {"name":"Wiliam's Shoes","value":"30.67","itemtype":"clothing","rating":"6/10"},
-
+    {"name":"William's Shoes","value":"30.67","itemtype":"clothing","rating":"6/10"},
 
 ]
 
 cost = 0
+buy = 1
 
+while buy == 1:
+    for index, item in enumerate(items):
+        print(index, ":", item["name"])
+    x = int(input("Which item would you like. Enter the number: "))
+    cost = cost + (items[x]["value"])
 
-for index, item in enumerate(items):
-    print(index, ":", item["name"])
+print(cost)
 
 
 
