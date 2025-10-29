@@ -14,6 +14,9 @@ items = [
 
     {"name":"William's Shoes","value":"30.67","itemtype":"clothing","rating":"6/10",}
 
+    {"name":"SITHS Bake Sale Pizza Slice","value":"2.00","itemtype":"food","rating":"10.67/10",}
+
+
 ]
 
 cost = 0
@@ -29,6 +32,8 @@ while buy == 1:
     exact = round(cost,2)
 
     print(exact)
+
+    continue = input("Press 1 t")
 
 
 
