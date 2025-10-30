@@ -20,7 +20,9 @@ items = [
 
     {"name":"Stupidly Loud Alarm Clock","value":"10.99","itemtype":"household","rating":"10.67/10",},
 
-    {"name":"Mr. Whalen's Sanity","value":"14000.00","itemtype":"food","rating":"10.67/10",}
+    {"name":"Mr. Whalen's Sanity","value":"14000.00","itemtype":"food","rating":"10.67/10",},
+
+    {"name":"Mr. Whalen's Future Glasses","value":"199.99","itemtype":"household","rating":"10.67/10",}
 
 
 
@@ -34,20 +36,37 @@ bought = []
 while buy == 1:
     for index, item in enumerate(items):
         print(index, ":", item["name"])
-    ab = int(input("Which item would you like. Enter the number: "))
+    print("  ")
+    ab = int(input("Which item would you like to add to your cart? Enter the number: "))
     cost += (float(items[ab]["value"]))
     bought.append(items[ab]["name"])
 
     exact = round(cost,3)
 
-    print(exact)
-    print(bought)
+    print(f"Your total is {exact}")
+    print(f"You've bought {bought}")
+    print("   ")
+    ac = int(input("Enter 1 to continue purchasing, enter 2 to check out, enter 3 to remove an item from your cart: "))
+    print("    ")
 
-    buy = int(input("Enter 1 to continue purchasing, enter 2 to check out: "))
+    
+    if ac == 3:
+        for index, item in enumerate(items):
+            print(index, ":", item["name"])
+        toremove = int(input("Which item would you like to remove? Enter the number: "))
+        bought.remove(items[ab]["name"])
+        ac =(f"You've removed {toremove} from your cart.")
+
+    if ac == 2:
+        buy = 67
+
+        
 
 
-print(f"Your total cost is {exact} and you've pucrhased the following items: {bought}.")
 
+
+print(f"Your total cost is {exact} and you've pucrhased the following items: {bought}. Please text (929) 624 - 7296 or email lukezheng2011@gmail.com to pay.")
+    
 
 
 
