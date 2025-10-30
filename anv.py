@@ -12,9 +12,17 @@ items = [
 
     {"name":"iPhone 17 - 512 GB","value":"999.99","itemtype":"eletronics","rating":"8/10",},
 
-    {"name":"William's Shoes","value":"30.67","itemtype":"clothing","rating":"6/10",}
+    {"name":"William's Shoes","value":"30.67","itemtype":"clothing","rating":"1/10",},
 
-    {"name":"SITHS Bake Sale Pizza Slice","value":"2.00","itemtype":"food","rating":"10.67/10",}
+    {"name":"SITHS Bake Sale Pizza Slice","value":"2.00","itemtype":"food","rating":"10.67/10",},
+
+    {"name":"ShopRite Donut","value":"1.00","itemtype":"food","rating":"8/10",},
+
+    {"name":"Stupidly Loud Alarm Clock","value":"10.99","itemtype":"household","rating":"10.67/10",},
+
+    {"name":"Mr. Whalen's Sanity","value":"14000.00","itemtype":"food","rating":"10.67/10",}
+
+
 
 
 ]
@@ -28,12 +36,18 @@ while buy == 1:
         print(index, ":", item["name"])
     ab = int(input("Which item would you like. Enter the number: "))
     cost += (float(items[ab]["value"]))
+    bought.append(items[ab]["name"])
 
-    exact = round(cost,2)
+    exact = round(cost,3)
 
     print(exact)
+    print(bought)
 
-    continue = input("Press 1 t")
+    buy = int(input("Enter 1 to continue purchasing, enter 2 to check out: "))
+
+
+print(f"Your total cost is {exact} and you've pucrhased the following items: {bought}.")
+
 
 
 
